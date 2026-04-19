@@ -1,0 +1,26 @@
+{
+  "name": "sanna-ui-rc",
+  "version": "0.1.2",
+  "description": "Librería de componentes React basada en Bootstrap 5",
+  "type": "module",
+  "main": "sanna-ui-rc.cjs.js",
+  "module": "sanna-ui-rc.es.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./sanna-ui-rc.es.js",
+      "require": "./sanna-ui-rc.cjs.js"
+    }
+  },
+  "files": [
+    "sanna-ui-rc.es.js",
+    "sanna-ui-rc.cjs.js",
+    "index.d.ts",
+    "components"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}
