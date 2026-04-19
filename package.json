@@ -1,0 +1,42 @@
+{
+  "name": "sanna-ui-rc",
+  "version": "0.1.0",
+  "description": "Librería de componentes React basada en Bootstrap 5",
+  "type": "module",
+  "main": "dist/sanna-ui-rc.cjs.js",
+  "module": "dist/sanna-ui-rc.es.js",
+  "types": "dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sanna-ui-rc.es.js",
+      "require": "./dist/sanna-ui-rc.cjs.js",
+      "types": "./dist/src/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "build:lib:prod": "vite build",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "@vitejs/plugin-react": "^4.4.1",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.86.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.3",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^3.9.1"
+  }
+}

@@ -1,0 +1,28 @@
+// =============================================================================
+// Design Tokens — sanna-ui-rc
+// Modifica estas variables para personalizar el tema de la librería.
+// =============================================================================
+
+// Colores de marca
+$color-primary:    #0d6efd !default;
+$color-secondary:  #6c757d !default;
+$color-success:    #198754 !default;
+$color-danger:     #dc3545 !default;
+$color-warning:    #ffc107 !default;
+$color-info:       #0dcaf0 !default;
+$color-light:      #f8f9fa !default;
+$color-dark:       #212529 !default;
+
+// Espaciado base
+$spacer:           1rem !default;
+
+// Tipografía
+$font-size-base:   1rem !default;
+$font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1.5 !default;
+
+// Bordes
+$border-radius:    0.375rem !default;
+$border-radius-sm: 0.25rem !default;
+$border-radius-lg: 0.5rem !default;

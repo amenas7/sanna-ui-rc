@@ -1,0 +1,67 @@
+// =============================================================================
+// Entry point de estilos — sanna-ui-rc
+// Importa Bootstrap con los tokens de la librería aplicados como overrides.
+// El orden dentro de @use 'bootstrap/scss/bootstrap' with (...) es lo que
+// permite sobreescribir las variables !default de Bootstrap.
+// =============================================================================
+
+// Tokens propios (importados con @import para disponibilidad en este scope)
+@import 'tokens';
+
+// Bootstrap con variables sobreescritas via la sintaxis moderna @use ... with
+// Nota: Bootstrap internamente aún usa @import, por eso silenciamos el warning
+// en vite.config.ts. La API pública de Bootstrap soporta este patrón.
+@import 'bootstrap/scss/functions';
+
+// Overrides de variables Bootstrap con los tokens
+$primary:          $color-primary;
+$secondary:        $color-secondary;
+$success:          $color-success;
+$danger:           $color-danger;
+$warning:          $color-warning;
+$info:             $color-info;
+$light:            $color-light;
+$dark:             $color-dark;
+$spacer:           $spacer;
+$font-size-base:   $font-size-base;
+$font-family-base: $font-family-base;
+$font-weight-base: $font-weight-base;
+$line-height-base: $line-height-base;
+$border-radius:    $border-radius;
+$border-radius-sm: $border-radius-sm;
+$border-radius-lg: $border-radius-lg;
+
+// Features opcionales
+$enable-shadows:        false;
+$enable-gradients:      false;
+$enable-transitions:    true;
+$enable-reduced-motion: true;
+$enable-smooth-scroll:  false;
+
+// Bootstrap — solo módulos utilizados por la librería
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/type';
+@import 'bootstrap/scss/grid';
+@import 'bootstrap/scss/helpers';
+@import 'bootstrap/scss/utilities/api';
+@import 'bootstrap/scss/buttons';
+@import 'bootstrap/scss/forms';
+@import 'bootstrap/scss/badge';
+@import 'bootstrap/scss/alert';
+@import 'bootstrap/scss/spinners';
+@import 'bootstrap/scss/transitions';
+
+// CSS custom properties de la librería (permiten theming en runtime)
+:root {
+  --sanna-color-primary:   #{$primary};
+  --sanna-color-secondary: #{$secondary};
+  --sanna-font-size-base:  #{$font-size-base};
+  --sanna-spacer:          #{$spacer};
+  --sanna-border-radius:   #{$border-radius};
+}

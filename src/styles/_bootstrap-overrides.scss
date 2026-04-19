@@ -1,0 +1,40 @@
+// =============================================================================
+// Bootstrap Overrides
+// Mapea los design tokens de la librería a las variables de Bootstrap.
+// Este archivo debe importarse ANTES de Bootstrap para que los !default
+// sean sobreescritos correctamente.
+// =============================================================================
+
+// Colores
+$primary:   $color-primary;
+$secondary: $color-secondary;
+$success:   $color-success;
+$danger:    $color-danger;
+$warning:   $color-warning;
+$info:      $color-info;
+$light:     $color-light;
+$dark:      $color-dark;
+
+// Espaciado
+$spacer: $spacer;
+
+// Tipografía
+$font-size-base:        $font-size-base;
+$font-family-base:      $font-family-base;
+$font-weight-base:      $font-weight-base;
+$line-height-base:      $line-height-base;
+
+// Bordes
+$border-radius:    $border-radius;
+$border-radius-sm: $border-radius-sm;
+$border-radius-lg: $border-radius-lg;
+
+// Breakpoints
+$grid-breakpoints: $grid-breakpoints;
+
+// Deshabilitar features no usadas (reduce el CSS compilado)
+$enable-shadows:        false;
+$enable-gradients:      false;
+$enable-transitions:    true;
+$enable-reduced-motion: true;
+$enable-smooth-scroll:  false;
